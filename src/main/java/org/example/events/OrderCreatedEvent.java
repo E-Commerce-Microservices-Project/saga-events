@@ -9,6 +9,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class OrderCreatedEvent {
     private Long orderId;
     private Long customerId;

@@ -8,6 +8,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class StockReservedEvent {
     private Long orderId;
     private List<OrderItemDTO> items;
