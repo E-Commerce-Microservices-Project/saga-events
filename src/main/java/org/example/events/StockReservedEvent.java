@@ -4,13 +4,13 @@ package org.example.events;
 
 import lombok.*;
 import java.util.List;
+import java.util.UUID;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class StockReservedEvent {
-    private Long orderId;
+    private UUID orderId;
     private List<OrderItemDTO> items;
     private Long customerId;
 }

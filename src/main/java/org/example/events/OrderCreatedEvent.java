@@ -5,16 +5,16 @@ import lombok.*;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.UUID;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class OrderCreatedEvent {
-    private Long orderId;
+    private UUID orderId;
     private Long customerId;
     private List<OrderItemDTO> items;
     private String couponCode;
     private BigDecimal totalAmount;
-    private Long transactionId;
+    private UUID transactionId;
 }
