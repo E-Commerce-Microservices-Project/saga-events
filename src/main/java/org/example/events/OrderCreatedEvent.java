@@ -12,7 +12,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class OrderCreatedEvent {
     private UUID orderId;
-    private Long customerId;
+    private UUID customerId;
     private List<OrderItemDTO> items;
     private String couponCode;
     private BigDecimal totalAmount;

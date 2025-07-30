@@ -12,5 +12,5 @@ import java.util.UUID;
 public class StockReservedEvent {
     private UUID orderId;
     private List<OrderItemDTO> items;
-    private Long customerId;
+    private UUID customerId;
 }
